@@ -1,28 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
 
-}
-html{
-    height: 100%;
-}
 
-body{
-    font-family: sans-serif;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.sticky-footer{
-    margin-top: auto;
-    background-color: black;
-    margin-top: auto;
-    text-align: center;
-    
-}
-
-.container mt-4{
-   
-}
 
 
