@@ -6,19 +6,21 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 /* Basic styling for the card container */
 .card {
-  max-width: 400px;
   margin: 20px auto;
+  max-width: 80%;
+  max-height: 915px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #2afa3c;
+  height: auto;
   overflow: hidden;
 }
 
 /* Styling for the profile image */
 .card-image img {
   width: 100%;
-  height: auto;
   display: block;
+
 }
 
 /* Styling for the profile picture */
@@ -26,7 +28,9 @@ body, h1, h2, h3, h4, h5, h6, p {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: -50px auto 0; /* Adjust margin to center vertically */
+  margin: 50px auto 0; /* Adjust margin to center vertically */
+  margin-bottom: 5px;
+  margin-top: 100px;
   display: block;
   border: 3px solid #fff; /* Optional: Add a border around the profile picture */
 }
@@ -35,6 +39,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 .card-content {
   text-align: center;
   padding: 20px;
+
 }
 
 /* Styling for the card title */
@@ -47,12 +52,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 .card-content p {
   color: #555;
   line-height: 1.6;
+  margin-bottom: 170px;
 }
 
 /* Styling for the social media icons */
 .icons {
   text-align: center;
   padding: 10px;
+  align-items: end;
 }
 
 .icons a {
@@ -66,4 +73,39 @@ body, h1, h2, h3, h4, h5, h6, p {
   color: #000;
 }
 
-  
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 100%;
+      height: 100%;
+      background-color: aqua;
+  }
+  .card-content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .card {
+      width: 100%;
+      height: 100%;
+      background-color: aquamarine;
+  }
+  .card-content h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .card {
+      width: 100%;
+      height: 100%;
+      background-color: #2afa3c;
+
+  }
+  .card-content h3 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+}
